@@ -3,7 +3,10 @@ package com.example.login;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> cb931be8872261ca77fa7b002d0565a4543d933d
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
 
                 if (username.equals("admin") && password.equals("admin")) {
+<<<<<<< HEAD
 //                    AlertDialog.Builder builder =  new AlertDialog.Builder(MainActivity.this);
 //                    builder.setTitle("Login Access");
 //                    builder.setPositiveButton("Ok!", new DialogInterface.OnClickListener() {
@@ -42,6 +46,18 @@ public class MainActivity extends AppCompatActivity {
 //                    dialog.show();
                     Intent intent1 = new Intent(MainActivity.this, MainScreenActivity.class);
                     startActivity(intent1);
+=======
+                    AlertDialog.Builder builder =  new AlertDialog.Builder(MainActivity.this);
+                    builder.setTitle("Login Access");
+                    builder.setPositiveButton("Ok!", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+>>>>>>> cb931be8872261ca77fa7b002d0565a4543d933d
 
                 } else {
                     AlertDialog.Builder builder =  new AlertDialog.Builder(MainActivity.this);
